@@ -35,6 +35,7 @@ class Body extends StatelessWidget {
         ),
         Expanded(
           child: ListView.builder(
+            physics: BouncingScrollPhysics(),
             itemCount: chatsData.length,
             itemBuilder: (context, index) => ChatCard(
               chat: chatsData[index],
